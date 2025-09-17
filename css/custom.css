@@ -6,6 +6,16 @@
   }
 
   #calendar {
-      max-width: 1100px;
+      max-width: 1600px;
       margin: 0 auto;
+  }
+
+
+  .fc-event.evento-conflito {
+      padding: 3%;
+      border-radius: 10px !important;
+      background-color: #FFD6D6;
+      align-items: center !important;
+      justify-content: center !important;
+      display: flex;
   }
