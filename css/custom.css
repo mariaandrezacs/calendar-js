@@ -1,108 +1,107 @@
 body {
-  margin: 40px 10px;
-  padding: 0;
-  font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
-  font-size: 14px;
+    margin: 40px 10px;
+    padding: 0;
+    font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+    font-size: 14px;
 }
 
 #calendar {
-  max-width: 1600px;
-  margin: 0 auto;
+    max-width: 1600px;
+    margin: 0 auto;
 }
 
 .fc-event.evento-conflito {
-  padding: 3%;
-  border-radius: 10px !important;
-  background-color: #ffd6d6;
-  align-items: center !important;
-  justify-content: center !important;
-  display: flex;
+    padding: 3%;
+    border-radius: 10px !important;
+    background-color: #ffd6d6;
+    align-items: center !important;
+    justify-content: center !important;
+    display: flex;
 }
 
 #calendar {
-  border: 1px solid #faf8f8;
-  border-radius: 16px;
-  overflow: hidden;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border: 1px solid #faf8f8;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .fc-event {
-  border-radius: 12px !important;
-  padding: 4px 6px;
+    border-radius: 12px !important;
+    padding: 4px 6px;
 }
 
 .fc .fc-button {
-  border-radius: 8px !important;
-  margin-top: 10px;
+    border-radius: 8px !important;
+    margin-top: 10px;
 }
 
 /* arredonda as células do calendário (opcional) */
 /* .fc-theme-standard td,
-.fc-theme-standard th {
-  border-radius: 6px;
-} */
+      .fc-theme-standard th {
+        border-radius: 6px;
+      } */
 
 .cores-info {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 12px; /* espaço entre as linhas */
+    margin-bottom: 1rem;
 }
 
 .cores-linha {
-  display: flex;
-  gap: 15px;
-  flex-wrap: wrap;
+    display: flex;
+    gap: 20px; /* espaço entre cada item da linha */
 }
 
 .cores-item {
-  display: flex;
-  align-items: center;
-  gap: 5px;
-  font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 5px; /* espaço entre o quadrado e o texto */
+    font-size: 14px;
+    min-width: 120px; /* garante alinhamento mesmo com textos maiores */
 }
 
 .cores-item span {
-  width: 15px;
-  height: 15px;
-  display: inline-block;
-  border: 1px solid #00000030;
-  border-radius: 3px;
+    width: 15px;
+    height: 15px;
+    display: inline-block;
 }
 
 /* Paleta de cores */
 .nao-realizado {
-  background: #d3d3d3;
+    background: #d3d3d3;
 }
 
 .proposta {
-  background: yellow;
+    background: yellow;
 }
 
 .pre-reserva {
-  background: #FFB6C1;
+    background: #ffb6c1;
 }
 
 .manutencao {
-  background: #a9a9a9;
+    background: #a9a9a9;
 }
 
 .quitado {
-  background: blue;
+    background: blue;
 }
 
 .taxa-reserva {
-  background: orange;
+    background: orange;
 }
 
 .gratuito {
-  background: purple;
+    background: purple;
 }
 
 .governamental {
-  background: red;
+    background: red;
 }
 
+
 .fc-timeline-event {
-  transform: translateY(25%) !important;
+    transform: translateY(25%) !important;
 }
