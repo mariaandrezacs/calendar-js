@@ -7,7 +7,8 @@ document.addEventListener('DOMContentLoaded', function () {
             id: '1',
             resourceId: '1',
             start: '2025-09-21',
-            end: '2025-09-24',
+            end: '2025-09-25',
+            allDay: true,
             title: '100 ANOS DE DALVA DE OLIVEIRA',
             color: 'orange'
         },
@@ -45,9 +46,24 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     ]
 
+    function criarEventoComDiarias(startDate, endDate, resourceId, title, color) {
+        let end = new Date(endDate);
+        end.setDate(end.getDate() + 1); // soma 1 dia para incluir o último
+        return {
+            resourceId,
+            start: startDate,
+            end: end.toISOString().split('T')[0], // formato YYYY-MM-DD
+            allDay: true,
+            title,
+            color
+        };
+    }
+
+    const evento = criarEventoComDiarias('2025-09-21', '2025-09-25', '1', '100 ANOS DE DALVA DE OLIVEIRA', 'orange');
+
     const calendar = new FullCalendar.Calendar(calendarEl, {
         headerToolbar: {
-            left: 'prev,dayGridMonth,next today',
+            left: 'prev next today',
             center: 'title',
             right: 'dayGridMonth,timeGridWeek,timeGridDay'
         },

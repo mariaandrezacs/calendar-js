@@ -20,27 +20,89 @@ body {
 }
 
 #calendar {
-  border: 1px solid #ddd; /* opcional: uma borda leve */
-  border-radius: 16px; /* arredonda as bordas externas */
-  overflow: hidden; /* importante: evita que as células quadradas "furem" o arredondado */
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* opcional: sombra bonita */
+  border: 1px solid #faf8f8;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-/* deixa os eventos com cantos arredondados */
 .fc-event {
   border-radius: 12px !important;
-  padding: 4px 6px; /* opcional: deixa mais espaçado */
+  padding: 4px 6px;
 }
 
-/* arredonda os botões do header */
 .fc .fc-button {
-  /* border-radius: 8px !important; */
+  border-radius: 8px !important;
   margin-top: 10px;
 }
 
 /* arredonda as células do calendário (opcional) */
-.fc-theme-standard td,
+/* .fc-theme-standard td,
 .fc-theme-standard th {
   border-radius: 6px;
+} */
+
+.cores-info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 1rem;
 }
 
+.cores-linha {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.cores-item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 14px;
+}
+
+.cores-item span {
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  border: 1px solid #00000030;
+  border-radius: 3px;
+}
+
+/* Paleta de cores */
+.nao-realizado {
+  background: #d3d3d3;
+}
+
+.proposta {
+  background: yellow;
+}
+
+.pre-reserva {
+  background: #FFB6C1;
+}
+
+.manutencao {
+  background: #a9a9a9;
+}
+
+.quitado {
+  background: blue;
+}
+
+.taxa-reserva {
+  background: orange;
+}
+
+.gratuito {
+  background: purple;
+}
+
+.governamental {
+  background: red;
+}
+
+.fc-timeline-event {
+  transform: translateY(25%) !important;
+}
