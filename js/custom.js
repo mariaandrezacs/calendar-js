@@ -77,6 +77,35 @@ document.addEventListener('DOMContentLoaded', function () {
         resourceAreaHeaderContent: 'Espaços',
         resourceAreaWidth: '10%',
         locale: 'pt-br',
+
+        // mostrar nome do evento simples
+        // eventDidMount: function (info) {
+        //     info.el.setAttribute("title", info.event.title);
+        // },
+
+        // mostra nome do evento melhor
+        eventDidMount: function (info) {
+            tippy(info.el, {
+                content: info.event.title,
+                theme: "light-border",
+                placement: "top"
+            });
+        },
+
+        // modal com mais informações
+        // eventClick: function (info) {
+        //     // Preenche o modal com os detalhes do evento
+        //     document.getElementById('eventoModalLabel').innerText = info.event.title;
+        //     document.getElementById('modalBody').innerHTML = `
+        //         <p><strong>Início:</strong> ${info.event.start.toLocaleDateString()}</p>
+        //         <p><strong>Fim:</strong> ${info.event.end ? info.event.end.toLocaleDateString() : '-'}</p>
+        //         <p><strong>Descrição:</strong> ${info.event.extendedProps.descricao || 'Sem descrição'}</p>
+        //         `;
+
+        //     // Mostra o modal (Bootstrap 5)
+        //     const modal = new bootstrap.Modal(document.getElementById('eventoModal'));
+        //     modal.show();
+        // },
         slotLabelFormat: [{ weekday: 'short' }, { day: 'numeric' }],
 
         resources: [
