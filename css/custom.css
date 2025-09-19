@@ -24,6 +24,8 @@ body {
     border-radius: 16px;
     overflow: hidden;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    /* margin: 100px; */
+    padding: 30px;
 }
 
 .fc-event {
@@ -70,35 +72,35 @@ body {
 
 /* Paleta de cores */
 .nao-realizado {
-    background: #d3d3d3;
+    background: #BA62A4;
 }
 
 .proposta {
-    background: yellow;
+    background: #9C8BC9;
 }
 
 .pre-reserva {
-    background: #ffb6c1;
+    background: #E6BD3E;
 }
 
 .manutencao {
-    background: #a9a9a9;
+    background: #757575;
 }
 
 .quitado {
-    background: blue;
+    background: #6AB8ED;
 }
 
 .taxa-reserva {
-    background: orange;
+    background: #D98E4B;
 }
 
 .gratuito {
-    background: purple;
+    background: #BF3030;
 }
 
 .governamental {
-    background: red;
+    background: #497CA7;
 }
 
 
