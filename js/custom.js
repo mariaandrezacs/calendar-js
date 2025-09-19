@@ -75,7 +75,7 @@ document.addEventListener('DOMContentLoaded', function () {
         height: 'auto',
         firstDay: 1,
         resourceAreaHeaderContent: 'Espaços',
-        resourceAreaWidth: '10%',
+        resourceAreaWidth: '14%',
         locale: 'pt-br',
 
         // mostrar nome do evento simples
@@ -113,30 +113,24 @@ document.addEventListener('DOMContentLoaded', function () {
                 id: 'categoria-a',
                 title: 'Salas Frutas',
                 children: [
-                    { id: '1', title: 'Espaço A' },
-                    { id: '2', title: 'Espaço B' }
+                    { id: '1', title: 'Sala Temática Mangaba' },
+                    { id: '2', title: 'Sala Temática Pitanga' },
+                    { id: '3', title: 'Sala Temática Siriguela' },
+                    { id: '4', title: 'Sala Temática Tamarindo' },
+                    { id: '5', title: 'Sala Temática Umbú' },
                 ]
             },
             {
                 id: 'categoria-b',
                 title: 'Praias',
                 children: [
-                    { id: '3', title: 'Espaço C' },
-                    { id: '4', title: 'Espaço D' }
+                    { id: '6', title: 'Espaço C' },
+                    { id: '7', title: 'Espaço D' }
                 ]
             },
             {
                 id: 'categoria-c',
                 title: 'Auditório',
-                children: [
-                    { id: '5', title: 'Espaço E' },
-                    { id: '6', title: 'Espaço F' },
-                    { id: '7', title: 'Espaço G' }
-                ]
-            },
-            {
-                id: 'categoria-d',
-                title: 'Hall',
                 children: [
                     { id: '8', title: 'Espaço E' },
                     { id: '9', title: 'Espaço F' },
@@ -144,8 +138,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 ]
             },
             {
-                id: 'categoria-e',
-                title: 'Teatro',
+                id: 'categoria-d',
+                title: 'Hall',
                 children: [
                     { id: '11', title: 'Espaço E' },
                     { id: '12', title: 'Espaço F' },
@@ -153,12 +147,21 @@ document.addEventListener('DOMContentLoaded', function () {
                 ]
             },
             {
-                id: 'categoria-f',
-                title: 'Lanchonete',
+                id: 'categoria-e',
+                title: 'Teatro',
                 children: [
                     { id: '14', title: 'Espaço E' },
                     { id: '15', title: 'Espaço F' },
                     { id: '16', title: 'Espaço G' }
+                ]
+            },
+            {
+                id: 'categoria-f',
+                title: 'Lanchonete',
+                children: [
+                    { id: '17', title: 'Espaço E' },
+                    { id: '18', title: 'Espaço F' },
+                    { id: '19', title: 'Espaço G' }
                 ]
             }
         ],
