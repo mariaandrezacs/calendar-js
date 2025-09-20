@@ -6,20 +6,71 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Calendário</title>
   <link rel="stylesheet" href="css/custom.css">
-  <style>
-
-  </style>
+  <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/dist/tippy.css" />
+  <link href='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/main.min.css' rel='stylesheet' />
 </head>
 
 <body>
+  <!-- cabecalho -->
+  <div class="row">
+    <h4>
+      <span class="icon texto-cabecalho"><i class="bi bi-calendar3"></i></span>
+      <span class="texto-cabecalho">Calendário de Eventos</span>
+    </h4>
+    <span class="text-center col-12">
+      <hr />
+    </span>
+  </div>
+  <div class="cores-info">
+    <div class="cores-linha">
+      <div class="cores-item">
+        <span class="governamental"></span>Governamental
+      </div>
+      <div class="cores-item">
+        <span class="gratuito"></span>Gratuito
+      </div>
+      <div class="cores-item">
+        <span class="manutencao"></span>Manutenção
+      </div>
+      <div class="cores-item">
+        <span class="nao-realizado"></span>Não realizado
+      </div>
+    </div>
+    <div class="cores-linha">
+      <div class="cores-item">
+        <span class="pre-reserva"></span>Pré-Reserva
+      </div>
+      <div class="cores-item">
+        <span class="proposta"></span>Proposta
+      </div>
+      <div class="cores-item">
+        <span class="quitado"></span>Quitado
+      </div>
+
+      <div class="cores-item">
+        <span class="taxa-reserva"></span>Taxa de Reserva
+      </div>
+    </div>
+  </div>
+
+
+  <br>
+  <br>
+  <br>
 
   <div id="calendar"></div>
+
+
 
   <script src="js/custom.js"></script>
   <script src="js/index.global.min.js"></script>
   <script src="js/scheduler/index.global.min.js"></script>
   <script src="js/locales-all.global.min.js"></script>
   <script src="js/pt.global.min.js"></script>
+  <script src="https://unpkg.com/@popperjs/core@2"></script>
+  <script src="https://unpkg.com/tippy.js@6"></script>
+
+
 
 </body>
 
