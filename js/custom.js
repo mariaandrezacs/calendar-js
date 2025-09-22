@@ -6,44 +6,52 @@ document.addEventListener('DOMContentLoaded', function () {
         {
             id: '1',
             resourceId: '1',
-            start: '2025-09-21',
-            end: '2025-09-25',
-            allDay: true,
+            start: '2025-09-01',
+            end: '2025-09-30',
             title: '100 ANOS DE DALVA DE OLIVEIRA',
-            color: 'orange'
+            color: '#9C8BC9'
+
         },
         {
             id: '2',
-            resourceId: '1',
-            start: '2025-09-24',
+            resourceId: '2',
+            start: '2025-09-10',
             end: '2025-09-25',
             title: '1° SEMINÁRIO DE SAÚDE E EDUCAÇÃO',
-            color: 'red'
+            color: '#757575'
         },
         {
             id: '3',
-            resourceId: '2',
-            start: '2025-09-26',
+            resourceId: '3',
+            start: '2025-09-17',
             end: '2025-09-27',
             title: '22 MOSTRA ALAGOANA DE DANÇA',
-            color: 'blue'
+            color: '#BF3030'
         },
         {
             id: '4',
-            resourceId: '2',
-            start: '2025-09-28',
+            resourceId: '4',
+            start: '2025-09-18',
             end: '2025-09-29',
             title: 'EVENTOS RJ LTDA TESTE',
-            color: 'blue'
+            color: '#6AB8ED'
         },
         {
             id: '5',
-            resourceId: '3',
-            start: '2025-09-30',
-            end: '2025-07-30',
+            resourceId: '5',
+            start: '2025-09-10',
+            end: '2025-09-30',
             title: 'GRAVAÇÃO INOVATECH',
-            color: 'blue'
-        }
+            color: '#497CA7'
+        },
+        {
+            id: '6',
+            resourceId: '6',
+            start: '2025-09-01',
+            end: '2025-09-16',
+            title: 'GRAVAÇÃO INOVATECH',
+            color: '#E6BD3E'
+        },
     ]
 
     function criarEventoComDiarias(startDate, endDate, resourceId, title, color) {
