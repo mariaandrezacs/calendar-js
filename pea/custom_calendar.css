@@ -1,0 +1,136 @@
+body {
+    margin: 40px 10px;
+    padding: 0;
+    font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+#calendar {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.fc-event.evento-conflito {
+    padding: 3%;
+    border-radius: 10px !important;
+    background-color: #ffd6d6;
+    align-items: center !important;
+    justify-content: center !important;
+    display: flex;
+}
+
+#calendar {
+    border: 1px solid #faf8f8;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.fc-event {
+    border-radius: 12px !important;
+    padding: 4px 6px;
+}
+
+.fc .fc-button {
+    border-radius: 8px !important;
+    margin-top: 10px;
+}
+
+.cores-info {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    /* espaço entre as linhas */
+    margin-bottom: 1rem;
+}
+
+.cores-linha {
+    display: flex;
+    gap: 20px;
+    /* espaço entre cada item da linha */
+}
+
+.cores-item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    /* espaço entre o quadrado e o texto */
+    font-size: 14px;
+    min-width: 120px;
+    /* garante alinhamento mesmo com textos maiores */
+}
+
+.cores-item span {
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+}
+
+/* Paleta de cores */
+.nao-realizado {
+    background: #BA62A4;
+}
+
+.proposta {
+    background: #9C8BC9;
+}
+
+.pre-reserva {
+    background: #E6BD3E;
+}
+
+.manutencao {
+    background: #757575;
+}
+
+.quitado {
+    background: #6AB8ED;
+}
+
+.taxa-reserva {
+    background: #D98E4B;
+}
+
+.gratuito {
+    background: #BF3030;
+}
+
+.governamental {
+    background: #497CA7;
+}
+
+
+.fc-timeline-event {
+    transform: translateY(25%) !important;
+}
+
+
+.fc-weekend {
+    background-color: #BF3030 !important;
+}
+
+/* Centraliza os botões no chunk do header e faz eles preencherem todo o espaço */
+.fc-header-toolbar .fc-toolbar-chunk:nth-child(2) {
+    display: flex;
+    width: 100%;
+    /* ocupa todo o espaço do chunk central */
+    gap: 6px;
+    /* espaço entre os botões */
+}
+
+/* Faz cada botão crescer igualmente para preencher o chunk */
+.fc-header-toolbar .fc-toolbar-chunk:nth-child(2) .fc-button {
+    flex: 1;
+    /* cresce para ocupar todo o espaço disponível */
+    border-radius: 10px 10px 0 0 !important;
+    height: 51px;
+    /* padding-top: 14.46px;
+  padding-bottom: 14.46px; */
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0px !important;
+}
+
+.fc .fc-toolbar.fc-header-toolbar {
+    margin: 0px !important;
+}

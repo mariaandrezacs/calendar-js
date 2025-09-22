@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>FullCalendar Scheduler</title>
+    <link href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/fullcalendar-scheduler@6.1.8/index.global.min.css" rel="stylesheet">
+    <style>
+        #calendar {
+            max-width: 1100px;
+            margin: 40px auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="calendar"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar-scheduler@6.1.8/index.global.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var calendarEl = document.getElementById('calendar');
+
+            var calendar = new FullCalendar.Calendar(calendarEl, {
+                schedulerLicenseKey: 'GPL-My-Project-Is-Open-Source', // necessário para testar Scheduler
+                initialView: 'resourceTimeGridDay', // visualização por recurso
+                headerToolbar: {
+                    left: 'prev,next today',
+                    center: 'title',
+                    right: 'resourceTimeGridDay,resourceTimeGridWeek'
+                },
+                resources: [
+                    { id: 'a', title: 'Sala A' },
+                    { id: 'b', title: 'Sala B' },
+                    { id: 'c', title: 'Sala C' }
+                ],
+                events: [
+                    { id: '1', resourceId: 'a', title: 'Reunião', start: '2025-09-22T09:00:00', end: '2025-09-22T10:00:00' },
+                    { id: '2', resourceId: 'b', title: 'Treinamento', start: '2025-09-22T11:00:00', end: '2025-09-22T12:30:00' },
+                    { id: '3', resourceId: 'c', title: 'Apresentação', start: '2025-09-22T13:00:00', end: '2025-09-22T14:00:00' }
+                ],
+                editable: true,  // permite arrastar eventos
+                selectable: true, // permite seleção
+            });
+
+            calendar.render();
+        });
+    </script>
+</body>
+
+</html>
