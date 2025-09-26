@@ -1,0 +1,135 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+#calendar {
+    /* max-width: 1600px; */
+    max-width: 100%;
+    margin: 0 auto;
+    background-color: #fffafa;
+    font-size: 12px !important;
+    font-weight: bold;
+    border: 1px solid #faf8f8;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+
+.fc-event {
+    border-radius: 12px !important;
+    padding: 4px 6px;
+}
+
+.fc .fc-button {
+    border-radius: 8px !important;
+    margin-top: 10px;
+}
+
+
+
+/* ESTILIZA DESCRIÇÃO DAS CORES STATUS */
+.cores-info {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 1rem;
+}
+
+.cores-linha {
+    display: flex;
+    gap: 20px;
+}
+
+.cores-item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 14px;
+    min-width: 120px;
+}
+
+.cores-item span {
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+}
+
+/* PALETA DE CORES DESCRIÇÃO DOS STATUS */
+.nao-realizado {
+    background: #BA62A4;
+}
+
+.proposta {
+    background: #9C8BC9;
+}
+
+.pre-reserva {
+    background: #E6BD3E;
+}
+
+.manutencao {
+    background: #757575;
+}
+
+.quitado {
+    background: #6AB8ED;
+}
+
+.taxa-reserva {
+    background: #D98E4B;
+}
+
+.gratuito {
+    background: #BF3030;
+}
+
+.governamental {
+    background: #497CA7;
+}
+
+
+/* ESTILIZA NAVBAR */
+.fc-timeline-event {
+    transform: translateY(25%) !important;
+}
+
+.fc-header-toolbar .fc-toolbar-chunk:nth-child(2) {
+    display: flex !important;
+    width: 100% !important;
+    gap: 10px !important;
+    color: #003663;
+}
+
+.fc-header-toolbar .fc-toolbar-chunk:nth-child(2) .fc-button {
+    flex: 2;
+    border-radius: 10px 10px 0 0 !important;
+    height: 51px;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0px !important;
+    font-size: 22px !important;
+
+}
+
+.fc .fc-toolbar.fc-header-toolbar {
+    margin: 0px !important;
+}
+
+
+/* ESTILIZA COR DOS BOTÕES */
+.fc-button {
+    background-color: #003663 !important;
+}
+
+
+/* ESTILIZA CORES DAS CATEGORIAS E ESPAÇOS */
+.fc-datagrid-cell-frame {
+    color: #738fa9;
+}
+
+
+

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* MODAL SEMANAL */
+    #modalEventosSemana {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: none;
+      background: rgba(0, 0, 0, 0.5);
+      justify-content: center;
+      align-items: center;
+      z-index: 99999;
+    }
+
+    #modalEventosSemana .conteudo {
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      width: 400px;
+      max-height: 80%;
+      overflow-y: auto;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="row">
+    <h4>
+      <span class="icon texto-cabecalho"><i class="bi bi-calendar3"></i></span>
+      <span class="texto-cabecalho">Calendário de Eventos</span>
+    </h4>
+    <span class="text-center col-12">
+      <hr />
+    </span>
+  </div>
+  <div class="cores-info">
+    <div class="cores-linha">
+      <div class="cores-item">
+        <span class="governamental"></span>GOVERNAMENTAL
+      </div>
+      <div class="cores-item">
+        <span class="gratuito"></span>GRATUITO
+      </div>
+      <div class="cores-item">
+        <span class="manutencao"></span>MANUTENÇÃO
+      </div>
+      <div class="cores-item">
+        <span class="nao-realizado"></span>NÃO REALIZADO
+      </div>
+    </div>
+    <div class="cores-linha">
+      <div class="cores-item">
+        <span class="pre-reserva"></span>PRÉ-RESERVA
+      </div>
+      <div class="cores-item">
+        <span class="proposta"></span>PROPOSTA
+      </div>
+      <div class="cores-item">
+        <span class="quitado"></span>QUITADO
+      </div>
+
+      <div class="cores-item">
+        <span class="taxa-reserva"></span>TAXA DE RESERVA
+      </div>
+    </div>
+  </div>
+  <br />
+  <div id="modalEventosSemana">
+    <div class="conteudo">
+      <div class="d-flex">
+        <h2>Eventos da Semana</h2>
+        <button><span id="fecharModal">x</span></button>
+      </div>
+      <ul id="listaEventosSemana"></ul>
+    </div>
+  </div>
+  <div id="calendar"></div>
+  <script src="https://unpkg.com/@popperjs/core@2"></script>
+  <script src="https://unpkg.com/tippy.js@6"></script>
+  <script src="js/index.global.min.js"></script>
+  <script src="js/custom_calendar.js"></script>
+
+</body>
+
+</html>
